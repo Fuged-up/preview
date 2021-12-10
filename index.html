@@ -1,111 +1,67 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link href="favicon.ico" rel="icon" type="image/x-icon" />
-		<link href="https://preview.construct.net/remote/c3logo.svg" rel="apple-touch-icon" />
-		<meta content="white" name="theme-color" />
-		<meta content="yes" name="apple-mobile-web-app-capable" />
-		<meta content="black" name="apple-mobile-web-app-status-bar-style" />
-		<meta content="Construct Preview" name="apple-mobile-web-app-title" />
-		<meta content="images/hello-icon-144.png" name="msapplication-TileImage" />
-		<meta content="#FFFFFF" name="msapplication-TileColor" />
-		<title>Hello World</title>
-		<style type="text/css">
+<head>
+  <title>Bootstrap Website Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  
+  <style>
+  input {
+  height: 50px;
+  width: 530px;
+  border-radius: 50px;
+  border: solid 1px #566069;
+  background: #1d2b37;
+  padding-left: 15px;
+  padding-right: 60px;
+}
+
+@media (max-width: 768px) {
+  input {
+    max-width: 300px;
+  }
+}
+
+#search-icon {
+}
+
 body {
-  font-family: sans-serif;
-}
-
-/* Make content area fill the entire browser window */
-html,
-.fullscreen {
-  display: flex;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-}
-
-/* Center the content in the browser window */
-.container {
-  margin: auto;
+  background: #1d2b37;
   text-align: center;
+  margin: 0px;
+  padding-top: 160px;
 }
 
-.title {
-  font-size: 3rem;
+img {
+  width: 200px;
+  height: auto;
 }
-body {text-align:center;}
-img{width:35vw;}
-.red{color:red;}
-.green{color:green;}
-.blue{color:blue;}
-.myButton {
-	box-shadow:inset 0px 39px 0px -24px #e67a73;
-	background-color:#e4685d;
-	border-radius:4px;
-	border:1px solid #ffffff;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:15px;
-	padding:6px 15px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #b23e35;
+
+#search-icon {
+  font-size: 24pt;
+  position: absolute;
+  color: #566069;
+  padding: 10px 0px;
+  margin-left: -50px;
 }
-.myButton:hover {
-	background-color:#eb675e;
-}
-.myButton:active {
-	position:relative;
-	top:1px;
-}
-		.input-icons i {
-			position: absolute;
-		}
-		
-		.input-icons {
-			width: 100%;
-			margin-bottom: 10px;
-		}
-		
-		.icon {
-			padding: 10px;
-			min-width: 40px;
-		}
-		
-		.input-field {
-			width: 100%;
-			padding: 10px;
-			text-align: center;
-		}		</style>
-		<meta content="width=device-width, initial-scale=1.0" name="viewport" />
-	</head>
-	<body class="fullscreen">
-		<table border="0” cellpadding=" cellspacing="1" style="width:100%; height:25vw">
-			<tbody>
-				<tr height="25vw">
-					<td>
-						<img src="https://preview.construct.net/remote/c3logo.svg" />
-					</td>
-				</tr>
-				<tr>
-					<td style="padding-left:40px; padding-right:40px;">
-						<input class="input-field" id="myInput" placeholder="Enter remote preview ID" type="text" /></td>
-				</tr>
-				<tr>
-					<td>
-						<button class="myButton" onclick="myFunction()">Preview</button></td>
-				</tr>
-			</tbody>
-		</table>
-		<script>
-function myFunction() {
-var url = "https://preview.construct.net/#";
-var code = "document.getElementById('myInput').value";
-window.open(url+code,'_self',false);
-}
-</script><script src="js/main.js"></script>
-	</body>
+
+
+  </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col"><img src="https://raw.githubusercontent.com/Fuged-up/preview/05c7edd9db4c8c145ce09b000d8c11f14b734aa3/c3logo.svg" /></div>
+    </div>
+    <div class="row">
+        <div class="col-md-12"><input type="text" placeholder="Enter Code" /><i id="search-icon" class="fas fa-share-square" onclick="myFunction()"></i></div>
+    </div>
+</div>
+
+</body>
 </html>
