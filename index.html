@@ -1,207 +1,160 @@
 <!DOCTYPE html>
-<html>
-    
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>GETTING STARTED WITH BRACKETS</title>
-        <meta name="description" content="An interactive getting started guide for Brackets.">
-        <link rel="stylesheet" href="main.css">
-    </head>
-    <body>
-        
-        <h1>GETTING STARTED WITH BRACKETS</h1>
-        <h2>This is your guide!</h2>
-        
-        <!--
-            MADE WITH <3 AND JAVASCRIPT
-        -->
-        
-        <p>
-            Welcome to Brackets, a modern open-source code editor that understands web design. It's a lightweight,
-            yet powerful, code editor that blends visual tools into the editor so you get the right amount of help
-            when you want it.
-        </p>
-        
-        <!--
-            WHAT IS BRACKETS?
-        -->
-        <p>
-            <em>Brackets is a different type of editor.</em>
-            Brackets has some unique features like Quick Edit, Live Preview and others that you may not find in other
-            editors. Brackets is written in JavaScript, HTML and CSS. That means that most of you using Brackets
-            have the skills necessary to modify and extend the editor. In fact, we use Brackets every day to build
-            Brackets. To learn more about how to use the key features, read on.
-        </p>
-        
-        <!--
-            GET STARTED WITH YOUR OWN FILES
-        -->
-        
-        <h3>Projects in Brackets</h3>
-        <p>
-            In order to edit your own code using Brackets, you can just open the folder containing your files.
-            Brackets treats the currently open folder as a "project"; features like Code Hints, Live Preview and
-            Quick Edit only use files within the currently open folder.
-        </p>
-        
-        <samp>
-            Once you're ready to get out of this sample project and edit your own code, you can use the dropdown
-            in the left sidebar to switch folders. Right now, the dropdown says "Getting Started" - that's the
-            folder containing the file you're looking at right now. Click on the dropdown and choose "Open Folder…"
-            to open your own folder.
-            You can also use the dropdown later to switch back to folders you've opened previously, including this
-            sample project.
-        </samp>
-        
-        <!--
-            THE RELATIONSHIP BETWEEN HTML, CSS AND JAVASCRIPT
-        -->
-        <h3>Quick Edit for CSS and JavaScript</h3>
-        <p>
-            No more switching between documents and losing your context. When editing HTML, use the
-            <kbd>Cmd/Ctrl + E</kbd> shortcut to open a quick inline editor that displays all the related CSS.
-            Make a tweak to your CSS, hit <kbd>ESC</kbd> and you're back to editing HTML, or just leave the
-            CSS rules open and they'll become part of your HTML editor. If you hit <kbd>ESC</kbd> outside of
-            a quick inline editor, they'll all collapse. Quick Edit will also find rules defined in LESS and
-            SCSS files, including nested rules.
-        </p>
-        
-        <samp>
-            Want to see it in action? Place your cursor on the <!-- <samp> --> tag above and press
-            <kbd>Cmd/Ctrl + E</kbd>. You should see a CSS quick editor appear above, showing the CSS rule that
-            applies to it. Quick Edit works in class and id attributes as well. You can use it with your
-            LESS and SCSS files also.
-            
-            You can create new rules the same way. Click in one of the <!-- <p> --> tags above and press
-            <kbd>Cmd/Ctrl + E</kbd>. There are no rules for it right now, but you can click the New Rule
-            button to add a new rule for <!-- <p> -->.
-        </samp>
-        
-        <a href="screenshots/quick-edit.png">
-            <img alt="A screenshot showing CSS Quick Edit" src="screenshots/quick-edit.png" />
-        </a>
-        
-        <p>
-            You can use the same shortcut to edit other things as well - like functions in JavaScript,
-            colors, and animation timing functions - and we're adding more and more all the time.
-        </p>
-        <p>
-            For now inline editors cannot be nested, so you can only use Quick Edit while the cursor
-            is in a "full size" editor.
-        </p>
-        
-        <!--
-            LIVE PREVIEW
-        -->
-        <h3>Preview HTML and CSS changes live in the browser</h3>
-        <p>
-            You know that "save/reload dance" we've been doing for years? The one where you make changes in
-            your editor, hit save, switch to the browser and then refresh to finally see the result?
-            With Brackets, you don't have to do that dance.
-        </p>
-        <p>
-            Brackets will open a <em>live connection</em> to your local browser and push HTML and CSS updates as you
-            type! You might already be doing something like this today with browser-based tools, but with Brackets
-            there is no need to copy and paste the final code back into the editor. Your code runs in the
-            browser, but lives in your editor!
-        </p>
-        
-        <h3>Live Highlight HTML elements and CSS rules</h3>
-        <p>
-            Brackets makes it easy to see how your changes in HTML and CSS will affect the page. When your cursor
-            is on a CSS rule, Brackets will highlight all affected elements in the browser. Similarly, when editing
-            an HTML file, Brackets will highlight the corresponding HTML elements in the browser.
-        </p>
-        
-        <samp>
-            If you have Google Chrome installed, you can try this out yourself. Click on the lightning bolt
-            icon in the top right corner of your Brackets window or hit <kbd>Cmd/Ctrl + Alt + P</kbd>. When
-            Live Preview is enabled on an HTML document, all linked CSS documents can be edited in real-time.
-            The icon will change from gray to gold when Brackets establishes a connection to your browser.
-            
-            Now, place your cursor on the <!-- <img> --> tag above. Notice the blue highlight that appears
-            around the image in Chrome. Next, use <kbd>Cmd/Ctrl + E</kbd> to open up the defined CSS rules.
-            Try changing the size of the border from 10px to 20px or change the background
-            color from "transparent" to "hotpink". If you have Brackets and your browser running side-by-side, you
-            will see your changes instantly reflected in your browser. Cool, right?
-        </samp>
-        
-        <p class="note">
-            Today, Brackets only supports Live Preview for HTML and CSS. However, in the current version, changes to
-            JavaScript files are automatically reloaded when you save. We are currently working on Live Preview
-            support for JavaScript. Live previews are also only possible with Google Chrome, but we hope
-            to bring this functionality to all major browsers in the future.
-        </p>
-        
-        <h3>Quick View</h3>
-        <p>
-            For those of us who haven't yet memorized the color equivalents for HEX or RGB values, Brackets makes
-            it quick and easy to see exactly what color is being used. In either CSS or HTML, simply hover over any
-            color value or gradient and Brackets will display a preview of that color/gradient automatically. The
-            same goes for images: simply hover over the image link in the Brackets editor and it will display a
-            thumbnail preview of that image.
-        </p>
-        
-        <samp>
-            To try out Quick View for yourself, place your cursor on the <!-- <body> --> tag at the top of this
-            document and press <kbd>Cmd/Ctrl + E</kbd> to open a CSS quick editor. Now simply hover over any of the
-            color values within the CSS. You can also see it in action on gradients by opening a CSS quick editor
-            on the <!-- <html> --> tag and hovering over any of the background image values. To try out the image
-            preview, place your cursor over the screenshot image included earlier in this document.
-        </samp>
-        
-        <h3>Need something else? Try an extension!</h3>
-        <p>
-            In addition to all the goodness that's built into Brackets, our large and growing community of
-            extension developers has built hundreds of extensions that add useful functionality. If there's
-            something you need that Brackets doesn't offer, more than likely someone has built an extension for
-            it. To browse or search the list of available extensions, choose <strong>File > Extension
-            Manager…</strong> and click on the "Available" tab. When you find an extension you want, just click
-            the "Install" button next to it.
-        </p>
-        
-        <!--
-            LET US KNOW WHAT YOU THINK
-        -->
-        <h2>Get involved</h2>
-        <p>
-            Brackets is an open-source project. Web developers from around the world are contributing to build
-            a better code editor. Many more are building extensions that expand the capabilities of Brackets.
-            Let us know what you think, share your ideas or contribute directly to the project.
-        </p>
-        <ul>
-            <li><a href="http://brackets.io">Brackets.io</a></li>
-            <li><a href="http://blog.brackets.io">Brackets Team Blog</a></li>
-            <li><a href="https://github.com/adobe/brackets">Brackets on GitHub</a></li>
-            <li><a href="https://brackets-registry.aboutweb.com">Brackets Extension Registry</a></li>
-            <li><a href="https://github.com/adobe/brackets/wiki">Brackets Wiki</a></li>
-            <li><a href="https://groups.google.com/forum/#!forum/brackets-dev">Brackets Developer Mailing List</a></li>
-            <li><a href="https://twitter.com/brackets">@brackets on Twitter</a></li>
-            <li>Chat with Brackets developers on IRC in <a href="http://webchat.freenode.net/?channels=brackets&uio=d4">#brackets on Freenode</a></li>
-        </ul>
-        
-    </body>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Betty and Sun Studio</title>
+    <meta name="twitter:title" content="Betty and Sun Studio">
+    <meta name="twitter:image" content="../assets/img/icon310.png">
+    <meta name="description" content="A small music production company located in Milwaukee, WI.">
+    <meta property="og:image" content="../assets/img/icon310.png">
+    <meta property="og:description" content="A small music production company located in Milwaukee, WI.">
+    <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="assets/img/icon180.png">
+    <link rel="icon" type="image/png" sizes="72x72" href="assets/img/icon72.png">
+    <link rel="icon" type="image/png" sizes="72x72" href="assets/img/icon72.png">
+    <link rel="icon" type="image/png" sizes="180x180" href="assets/img/icon180.png">
+    <link rel="icon" type="image/png" sizes="150x150" href="assets/img/icon150.png">
+    <link rel="icon" type="image/png" sizes="310x310" href="assets/img/icon310.png">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="assets/css/Easy-Contact-Form.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body id="header">
+    <nav class="navbar navbar-light navbar-expand-md navbar navbar-expand-lg fixed-top" id="nav">
+        <div class="container"><a class="navbar-brand js-scroll-trigger" href="#header"><img class="logo" src="assets/img/title.png"></a><button data-bs-toggle="collapse" class="navbar-toggler navbar-toggler-right" data-bs-target="#navbarResponsive-1" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" value="Menu"><i class="fa fa-bars"></i></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive-1">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item nav-link js-scroll-trigger"><a class="nav-link js-scroll-trigger" href="#about">about US</a></li>
+                    <li class="nav-item nav-link js-scroll-trigger"><a class="nav-link js-scroll-trigger" href="#services">Services</a></li>
+                    <li class="nav-item nav-link js-scroll-trigger"><a class="nav-link js-scroll-trigger" href="#examples"><strong>EXAMPLES</strong></a></li>
+                    <li class="nav-item nav-link js-scroll-trigger"><a class="nav-link js-scroll-trigger" href="#footer">contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header><div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" id="slide1">
+      </div>
+      <div class="carousel-item" id="slide2">
+      </div>
+      <div class="carousel-item" id="slide3">
+      </div>
+        <div id="main-header">
+            <img id="htitle" src="assets/img/title.png">
+            <h5>Bringing our client's ideas and songs to reality.</h5>
+            <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#about"><i class="fa fa-plus-circle"></i> <span class="btext">I wan't to know more</span> <i class="fa fa-plus-circle"></i></a>
+        </div>
+    </div>
+  </div></header>
+    <section id="about" class="content-section text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2>About Us</h2>
+                    <p class="mb-5 text-start indent">Betty and Sun Studio is a small music production company located in Milwaukee, WI. We use industry standard tools to bring either our clients or your clients’ ideas to full potential. From start to finish, we will always be there with our clients to insure that we deliver high quality products that meet their needs.<br></p>
+                    <p class="mb-5 mt2 text-start indent">Here at Betty and Sun Studio, we specialize in recording, mixing, mastering, and production work. Our work caters to professional musicians, record labels, podcasters, videographers, and hobbyists alike.<br></p>
+                    <p class="mb-5 mt2 text-start indent">Our core goal and mission is to help and improve the arts community and entertainment industry.</p>
+                </div>
+            </div>
+            <div class="col"><img class="aimg" src="assets/img/betty.jpg">
+                <h4 class="ah">Betty</h4>
+                <h6 class="ah2"><strong>Engineer/Producer</strong></h6>
+                <p class="text-start indent">Betty grew up in a non-musical family, but that did not stop him from pursuing his passion in music and audio technology. As not just a sound engineer but also a musician, Betty integrates both of his passions together in order to recreate what he hears into what he shares with others. His core belief in the knowing and understanding the why and how things work not only allows for him to be fluent in his craft, but also allows him to express his ideas with clients and invoke creativity with the projects that he is given.<br></p>
+                <p class="text-start indent">Betty graduated from Minnesota State University Moorhead, where he enrolled in the Entertainment Industry Technologies Program with an emphasis on Audio Technology. He has taken courses in audio theory, sound for video, and has done studio projects ranging from podcasts to mixing entire songs. He also graduated from Saint Paul College with an Associate’s in Fine Arts – Music where he expanded his knowledge on music theory, composition, and live musical performances. Due to the blend of both worlds, Betty considers himself a musician first and applies this to his workflow, whether it is mixing vocals into a backing track or creating a new track for clients using his knowledge of theory and composition.<br></p>
+                <p class="text-start mb-8 indent">Betty co-founded Betty &amp; Sun Studio, where he is currently working with artists to build a portfolio for when he graduates.<br></p>
+            </div>
+            <div class="col"><img class="aimg" src="assets/img/sun.jpg">
+                <h4 class="ah">Sun</h4>
+                <h6 class="ah2"><strong>multimedia</strong>/marketing<br></h6>
+                <p class="text-start">Growing up Sun always had a passion for the arts. So, this no surprise that during his upbringing, Sun began learning Graphical and Web Design alongside Music.</p>
+                <p class="text-start">After High School, Sun attended Saint Paul College in the Multimedia Degree Program and expanded his knowledge on Multimedia. He is proficient in HTML, CSS, JavaScript, and Adobe Products.</p>
+                <p class="text-start">&nbsp;Sun is a hard worker and even during his studies, he found employment for local family owned businesses. There he held responsibilities pertaining to business such as record keeping and marketing.&nbsp;</p>
+                <p class="text-start indent"></p>
+                <p class="text-start">Although Sun has a multitude of business skills on hand, Sun is also reminded that at his core, he is a musician at heart. With this combination, he has teamed up with Betty to co-found Betty and Sun Studio, where he wishes to give art back to the community in the same way that it was given to him growing up.</p>
+            </div>
+        </div>
+    </section>
+    <section id="services" class="content-section text-center">
+        <div class="container">
+            <h2>Services</h2>
+            <div class="row">
+                <div class="col-auto col-md-3 sinfo"><img src="assets/img/recording.png">
+                    <h3 class="s-heading">Recording</h3>
+                    <p class="lead mb-0">We use industry standard recording techniques and equipment to record your vocals or instruments with high fidelity and clarity. Whether you are sending vocals to be mixed somewhere else or have decided to mix with us, you can be sure that Betty and Sun Studio will strive for nothing less than your satisfaction and excellence.</p>
+                </div>
+                <div class="col-auto col-md-3 sinfo"><img src="assets/img/mixing.png">
+                    <h3 class="s-heading">Mixing</h3>
+                    <p class="lead mb-0">Betty and Sun Studio uses Entertainment Industry Standard Digital Audio Workstations (DAW) and plugins to take your tracks and mixes to the next level. Whether you have recorded with us or are bringing in mixes from other sources, you can trust that Betty and Sun Studio will work with you every step of the way and prepare your mix for Mastering.</p>
+                </div>
+                <div class="col-auto col-md-3 sinfo"><img src="assets/img/mastering.png">
+                    <h3 class="s-heading">Mastering</h3>
+                    <p class="lead mb-0">Whether you mixed with us or not, Betty and Sun Studio will help get your mix ready for distribution. Whether you are going to be releasing your works on a CD, Vinyl, or Streaming Service, Betty and Sun Studio is here to help you finalize your mix for the whole world to hear.</p>
+                </div>
+                <div class="col-auto col-md-3 sinfo"><img src="assets/img/production.png">
+                    <h3 class="s-heading">Production</h3>
+                    <p class="lead mb-0">If you have an idea that is stuck in your head, Betty and Sun Studio can help bring it to fruition. From the very first note composition to the final step of Mastering, let us turn that idea in your head into a real work of art so that you can share it with the world.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="examples" class="content-section text-center">
+        <div class="container">
+            <h2>Examples</h2>
+            <p>Here are some examples of our work.</p>
+            <div class="row"><div class="col-md-6"><iframe width="330" height="186" src="https://www.youtube.com/embed/Qxxpyltt64E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div><div class="col-md-6"><iframe width="330" height="186" src="https://www.youtube.com/embed/Mg9obSyaZDE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></div>
+        </div>
+    </section>
+    <footer id="footer" class="content-section">
+        <div class="container text-center">
+            <div class="col">
+                <h2>Contact us</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="text-start">If you have any question or concern please use the form provided to reach us. You can also find us on our social account below.</p>
+                    <div class="social-account"><a class="sicon" href="https://www.facebook.com//BettySunStudio/" target="_blank"><i class="fa fa-facebook-square"></i></a><a class="sicon" href="http://m.me/BettySunStudio" target="_blank"><i class="fab fa-facebook-messenger"></i></a></div>
+                    <div class="text-start"><div class="term" onclick="popup()"><i class="fa fa-exclamation-circle"></i> TERMS & PRIVACY</div>
+                        <p class="pt-2">Last Updated : January 4th, 2021<br></p>
+                        <div class="terms-text">
+                            <p>At Betty and Sun Studio we respect your privacy. This Privacy Policy explain how we collect, use, disclose, and safeguard your information when you visit our website.&nbsp;<br></p>
+                            <p class="term-title"><strong>Changes to our Privacy Policy &amp; Terms</strong><br></p>
+                            <p>We will alert you about any changes by updating the “Last Updated” date of this Privacy Policy. You waive the right to receive specific notice of each such change or modification.<br></p>
+                            <p class="term-title"><strong>Collection of Your Information</strong><br></p><p>We only collect personally identifiable information from you when you use our contact forum or our Facebook Messenger Chat to get in touch with us. Any third party data collection is done by the third party itself, such as <a href="https://www.facebook.com/policy.php" target="_bank">FaceBook</a>.</p>
+                            <p>Any information that we collect from you may be used in one of the following ways:<br></p>
+                            <ul>
+                                <li><strong>To personalize your experience:</strong>&nbsp;Your information helps us to better respond to your individual needs</li>
+                                <li><strong>To improve your service:</strong>&nbsp;Your information helps us to more effectively respond to your service requests and support needs.</li>
+                                <li><strong>To contact you:</strong>&nbsp;To contact you back at your request.<br></li>
+                            </ul>
+                            <p class="term-title"><strong>Your Consent</strong><br></p>
+                            <p>By using our site, you consent to our website’s Privacy Policy &amp; Terms.<br></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6"><iframe src="email.php" id="emailus"></iframe></div>
+            </div>
+        </div>
+    </footer>
+    <footer id="copy">
+        <p class="text-start">Copyright © BettyandSunStudio.com 2021</p>
+    </footer>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script src="assets/js/scroll.js"></script>
+</body>
+
 </html>
-<!--
-
-    [[[[[[[[[[[[[[[      ]]]]]]]]]]]]]]]
-    [::::::::::::::      ::::::::::::::]
-    [::::::::::::::      ::::::::::::::]
-    [::::::[[[[[[[:      :]]]]]]]::::::]
-    [:::::[                      ]:::::]
-    [:::::[                      ]:::::]
-    [:::::[                      ]:::::]
-    [:::::[                      ]:::::]
-    [:::::[     CODE THE WEB     ]:::::]
-    [:::::[  http://brackets.io  ]:::::]
-    [:::::[                      ]:::::]
-    [:::::[                      ]:::::]
-    [:::::[                      ]:::::]
-    [:::::[                      ]:::::]
-    [::::::[[[[[[[:      :]]]]]]]::::::]
-    [::::::::::::::      ::::::::::::::]
-    [::::::::::::::      ::::::::::::::]
-    [[[[[[[[[[[[[[[      ]]]]]]]]]]]]]]]
-
--->
