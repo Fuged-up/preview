@@ -61,7 +61,7 @@
         	let h = document.documentElement.clientHeight;
         	var url = "https://preview.construct.net/#";
 			var code = "document.getElementById('myInput').value";
-  			document.body.innerHTML = "<iframe id='myFrame' src='"+url+code+"'>";
+  			document.body.innerHTML = "<iframe id='myFrame' placeholder='Enter remote preview ID' src='"+url+code+"'>";
             document.getElementById("myFrame").height = +h;
 		}
     </script>
