@@ -52,7 +52,7 @@
     <div id="info">
     	<img width="200px" src="https://raw.githubusercontent.com/Fuged-up/preview/05c7edd9db4c8c145ce09b000d8c11f14b734aa3/c3logo.svg">
         <div>
-        <input type="text" placeholder="Enter Code" />
+        <input type="text" placeholder="Enter remote preview ID" />
         <img id="search-icon" src="https://raw.githubusercontent.com/Fuged-up/preview/96ee33d25f9443aa556708a0bb1d365b4de20e8a/find.svg" onclick="myFunction()" />
         </div>
     </div>
@@ -61,7 +61,7 @@
         	let h = document.documentElement.clientHeight;
         	var url = "https://preview.construct.net/#";
 			var code = "document.getElementById('myInput').value";
-  			document.body.innerHTML = "<iframe id='myFrame' placeholder='Enter remote preview ID' src='"+url+code+"'>";
+  			document.body.innerHTML = "<iframe id='myFrame' src='"+url+code+"'>";
             document.getElementById("myFrame").height = +h;
 		}
     </script>
